@@ -163,7 +163,7 @@ class NimView(object):
 
     def notify_over(self):
         if self.game.model.winner == 0:
-            msg2 = "Congrats. You're the winner!!!"
+            msg2 = "You're the winner!!!"
         else:
             msg2 = "Sorry, the computer is the winner."
         self.display("To play again press space bar. To leave press ESC.", msg2)
