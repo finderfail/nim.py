@@ -152,16 +152,18 @@ class NimView(object):
         else:
             self.display(" ... thinking ...         ")
             time.sleep(0.5)
-            self.display(" ... thinking ... aaah ...")
+            self.display(" ... thinking ... wait ...")
+            time.sleep(0.5)
+            self.display(" ... thinking ... wait ... please ...")
             farbe = COLOR
             for s in range(maxspalte-1, col-1, -1):
-                time.sleep(0.2)
+                time.sleep(0.3)
                 self.sticks[(row, s)].color(farbe)
             self.display("Your turn! Click leftmost stick to remove.")
 
     def notify_over(self):
         if self.game.model.winner == 0:
-            msg2 = "Congrats. You're the winner!!!"
+            msg2 = "You're the winner!!!"
         else:
             msg2 = "Sorry, the computer is the winner."
         self.display("To play again press space bar. To leave press ESC.", msg2)
