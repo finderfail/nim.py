@@ -151,13 +151,13 @@ class NimView(object):
                 self.sticks[(row, s)].color(farbe)
         else:
             self.display(" ... thinking ...         ")
-            time.sleep(0.5)
+            time.sleep(0.4)
             self.display(" ... thinking ... wait ...")
-            time.sleep(0.5)
+            time.sleep(0.3)
             self.display(" ... thinking ... wait ... please ...")
             farbe = COLOR
             for s in range(maxspalte-1, col-1, -1):
-                time.sleep(0.3)
+                time.sleep(0.2)
                 self.sticks[(row, s)].color(farbe)
             self.display("Your turn! Click leftmost stick to remove.")
 
