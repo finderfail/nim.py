@@ -153,6 +153,8 @@ class NimView(object):
             self.display(" ... thinking ...         ")
             time.sleep(0.5)
             self.display(" ... thinking ... wait ...")
+            time.sleep(0.5)
+            self.display(" ... thinking ... wait ... please ...")
             farbe = COLOR
             for s in range(maxspalte-1, col-1, -1):
                 time.sleep(0.2)
