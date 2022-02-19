@@ -150,9 +150,9 @@ class NimView(object):
             for s in range(col, maxspalte):
                 self.sticks[(row, s)].color(farbe)
         else:
-            self.display(" ... thinking ...                    ")
+            self.display(" ... thinking ...")
             time.sleep(0.4)
-            self.display(" ... thinking ... wait ...           ")
+            self.display(" ... thinking ... wait ...")
             time.sleep(0.3)
             self.display(" ... thinking ... wait ... please ...")
             farbe = COLOR
